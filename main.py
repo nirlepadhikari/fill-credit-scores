@@ -58,8 +58,6 @@ def extract_scores(url:str):
 }
 
 def main():
-  print("Testing docker, main started")
-  return 0
   # Run a loop to get credit scores and update the system
   df = pd.read_csv('data.csv')
   df.columns = ['id', 'url']
