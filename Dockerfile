@@ -13,5 +13,8 @@ WORKDIR /app
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 
+ENV URL ${URL}
+ENV API_KEY ${API_KEY}
+
 # This is a long running process and does not need any ports exposed
 CMD ["python", "main.py"]
